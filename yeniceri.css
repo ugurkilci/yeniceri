@@ -3,7 +3,7 @@
  * Yeniçeri Css
  *
  * @author Uğur KILCI
- * @version 1.0
+ * @version 1.1
  * @github ugurkilci
  * @twitter ugur2nd
  *
@@ -16,18 +16,30 @@ body{
 	padding: 0px;
 }
 
+a{
+	color: #000;
+}
+a:hover,a:focus{
+	color: #000;
+}
+
 /* Düğmeler - Başla
    dgm = düğme
 */
 
 .dgm{
 	background-color: #ddd;
-	color: #000;
+	color: #fff;
 	padding: 5px;
 	border: 1px solid #aaa;
 	border-radius: 3px;
 	display: inline-block;
 	cursor: pointer;
+}
+
+.dgm:hover,.dgm:focus{
+	text-decoration: none;
+	color: #fff;
 }
 
 /* Düğme Radius Değerleri */
@@ -62,6 +74,7 @@ body{
 
 .dgm-genis{
 	width: 100%;
+	text-align: center;
 }
 
 /* Kırmızı */
@@ -171,33 +184,36 @@ body{
 }
 /* Siyah */
 .dgm-siyah{
-	background-color: #34495e;
-	border: 1px solid #1c2732;
+	background-color: #1e1e1e;
+	border: 1px solid #1e1e1e;
 	color: #fff;
 }
 
 .dgm-siyah:hover{
-	background-color: #2d3e50;
-	border: 1px solid #1c2732;
+	background-color: #1e1e1e;
+	border: 1px solid #1e1e1e;
 }
 
 .dgm-siyah:focus{
-	background-color: #1c2732;
-	border: 1px solid #1c2732;
+	background-color: #1e1e1e;
+	border: 1px solid #1e1e1e;
 }
 /* Beyaz */
 .dgm-beyaz{
 	background-color: #ecf0f1;
+	color: #1e1e1e;
 	border: 1px solid #bec3c7;
 }
 
 .dgm-beyaz:hover{
 	background-color: #e0e4e5;
+	color: #1e1e1e;
 	border: 1px solid #bec3c7;
 }
 
 .dgm-beyaz:focus{
 	background-color: #bec3c7;
+	color: #1e1e1e;
 	border: 1px solid #bec3c7;
 }
 /* Düğmeler - Bitiş */
@@ -433,6 +449,28 @@ body{
 }
 /* Animasyonlar - Bitiş */
 
+/* Form / input - Başla */
+input[type=text], input[type=password], input[type=submit], textarea, select{
+	margin: 5px 0px 5px 0px;
+	color: #000;
+}
+
+input[type=submit]{
+	color: #fff;
+}
+
+.yazi-kutu{
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.yazi-kutu:hover,.yazi-kutu:focus{
+	border: 1px solid #3297db;
+}
+/* Form / input - Bitiş */
+
 /* Antinguntin - Başla */
 .padd{
 	padding: 5px;
@@ -448,5 +486,21 @@ body{
 
 .disib{
 	display: inline-block;
+}
+
+.sol{
+	text-align: left;
+}
+
+.orta{
+	text-align: center;
+}
+
+.sag{
+	text-align: right;
+}
+
+.yasla{
+	text-align: justify;
 }
 /* Antinguntin - Bitiş */
